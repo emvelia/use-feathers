@@ -89,7 +89,7 @@ export const FeathersProvider = ({
       if (realtime) {
         useServiceEvents(service, (event: string, data: string) => {
           const EVENT = event.toUpperCase();
-  
+
           if (serviceEvents[EVENT]) {
             dispatch({
               type: event.toUpperCase(),
@@ -164,9 +164,9 @@ export const FeathersProvider = ({
    * @return {Promise}
    */
   const logout = () => feathersClient.logout().then(() => {
-    setIsLoggedIn(false));
+    setIsLoggedIn(false);
     setUserInfo(null);
-  };
+  });
 
   const resetState = (service: string, method: string) => (
     dispatch({

@@ -61,7 +61,9 @@ typings/
 # dotenv environment variables file
 .env
 
-build/
+# build/
 
 # Local Netlify folder
 .netlify
+
+.idea
