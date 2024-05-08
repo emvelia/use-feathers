@@ -163,7 +163,10 @@ export const FeathersProvider = ({
   /*
    * @return {Promise}
    */
-  const logout = () => feathersClient.logout().then(() => setIsLoggedIn(false));
+  const logout = () => feathersClient.logout().then(() => {
+    setIsLoggedIn(false));
+    setUserInfo(null);
+  }
 
   const resetState = (service: string, method: string) => (
     dispatch({
