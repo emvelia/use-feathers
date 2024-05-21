@@ -7,7 +7,7 @@ declare const mainHooks: ({ dispatch, resetState, feathersClient, state }: {
     useCreate: (service: string) => {
         state: any;
         resetCreateState: () => any;
-        createAction: (data: any, params: any) => void;
+        createAction: (data: any, params: any) => any;
     };
     useFind: (service: string) => {
         state: any;
@@ -22,17 +22,17 @@ declare const mainHooks: ({ dispatch, resetState, feathersClient, state }: {
     useRemove: (service: string) => {
         state: any;
         resetRemoveState: () => any;
-        removeAction: (id: any, query?: {}) => void;
+        removeAction: (id: any, query?: {}) => any;
     };
     useUpdate: (service: string) => {
         state: any;
         resetUpdateState: () => any;
-        updateAction: (id: string, params?: {}, query?: {}) => void;
+        updateAction: (id: string, params?: {}, query?: {}) => any;
     };
     usePatch: (service: string) => {
         state: any;
         resetPatchState: () => any;
-        patchAction: (id: any, data?: {}, params?: {}) => void;
+        patchAction: (id: any, data?: {}, params?: {}) => any;
     };
 };
 export default mainHooks;

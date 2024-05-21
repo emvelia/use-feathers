@@ -6,6 +6,6 @@ declare const useUpdate: ({ dispatch, resetState, feathersClient, state }: {
 }) => (service: string) => {
     state: any;
     resetUpdateState: () => any;
-    updateAction: (id: string, params?: {}, query?: {}) => void;
+    updateAction: (id: string, params?: {}, query?: {}) => any;
 };
 export default useUpdate;

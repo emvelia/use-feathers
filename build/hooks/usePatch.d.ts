@@ -6,6 +6,6 @@ declare const usePatch: ({ dispatch, resetState, feathersClient, state }: {
 }) => (service: string) => {
     state: any;
     resetPatchState: () => any;
-    patchAction: (id: any, data?: {}, params?: {}) => void;
+    patchAction: (id: any, data?: {}, params?: {}) => any;
 };
 export default usePatch;

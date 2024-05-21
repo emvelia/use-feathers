@@ -6,6 +6,6 @@ declare const useCreate: ({ dispatch, resetState, feathersClient, state }: {
 }) => (service: string) => {
     state: any;
     resetCreateState: () => any;
-    createAction: (data: any, params: any) => void;
+    createAction: (data: any, params: any) => any;
 };
 export default useCreate;

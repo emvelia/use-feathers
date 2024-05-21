@@ -14,7 +14,7 @@ const usePatch = ({ dispatch, resetState, feathersClient, state }) => (
       service,
     });
 
-    feathersClient
+    return feathersClient
       .service(service)
       .patch(id, data, params)
       .then((result) => {

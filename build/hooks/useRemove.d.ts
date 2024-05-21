@@ -6,6 +6,6 @@ declare const useRemove: ({ dispatch, resetState, feathersClient, state }: {
 }) => (service: string) => {
     state: any;
     resetRemoveState: () => any;
-    removeAction: (id: any, query?: {}) => void;
+    removeAction: (id: any, query?: {}) => any;
 };
 export default useRemove;

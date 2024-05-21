@@ -1395,7 +1395,7 @@ var useCreate = function (_a) {
                 method: serviceMethods.CREATE,
                 service: service,
             });
-            feathersClient
+            return feathersClient
                 .service(service)
                 .create(data, params)
                 .then(function (result) {
@@ -1504,7 +1504,7 @@ var useRemove = function (_a) {
                 method: serviceMethods.REMOVE,
                 service: service,
             });
-            feathersClient
+            return feathersClient
                 .service(service)
                 .remove(id, { query: query })
                 .then(function (result) {
@@ -1541,7 +1541,7 @@ var useUpdate = function (_a) {
                 method: serviceMethods.UPDATE,
                 service: service,
             });
-            feathersClient
+            return feathersClient
                 .service(service)
                 .update(id, params, { query: query })
                 .then(function (result) {
@@ -1578,7 +1578,7 @@ var usePatch = function (_a) {
                 method: serviceMethods.PATCH,
                 service: service,
             });
-            feathersClient
+            return feathersClient
                 .service(service)
                 .patch(id, data, params)
                 .then(function (result) {

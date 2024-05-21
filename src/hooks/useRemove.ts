@@ -14,7 +14,7 @@ const useRemove = ({ dispatch, resetState, feathersClient, state }) => (
       service,
     });
 
-    feathersClient
+    return feathersClient
       .service(service)
       .remove(id, { query })
       .then((result) => {

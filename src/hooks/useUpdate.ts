@@ -14,7 +14,7 @@ const useUpdate = ({ dispatch, resetState, feathersClient, state }) => (
       service,
     });
 
-    feathersClient
+    return feathersClient
       .service(service)
       .update(id, params, { query })
       .then((result) => {

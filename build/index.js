@@ -1403,7 +1403,7 @@
                     method: serviceMethods.CREATE,
                     service: service,
                 });
-                feathersClient
+                return feathersClient
                     .service(service)
                     .create(data, params)
                     .then(function (result) {
@@ -1512,7 +1512,7 @@
                     method: serviceMethods.REMOVE,
                     service: service,
                 });
-                feathersClient
+                return feathersClient
                     .service(service)
                     .remove(id, { query: query })
                     .then(function (result) {
@@ -1549,7 +1549,7 @@
                     method: serviceMethods.UPDATE,
                     service: service,
                 });
-                feathersClient
+                return feathersClient
                     .service(service)
                     .update(id, params, { query: query })
                     .then(function (result) {
@@ -1586,7 +1586,7 @@
                     method: serviceMethods.PATCH,
                     service: service,
                 });
-                feathersClient
+                return feathersClient
                     .service(service)
                     .patch(id, data, params)
                     .then(function (result) {
